@@ -1,0 +1,37 @@
+---
+title: "Análise Estatística e Espectral de Processos Estocásticos"
+subtitle: "Atividade extra"
+author: "Felipe Menino Carlos"
+date: "25/05/2020"
+output: 
+  pdf_document:
+    includes:
+          in_header: header.tex
+---
+
+## Introdução
+
+Este documento tem por objetivo apresentar a discussão criada para o exercício extra da matéria de \texttt{Análise Estatística e Espectral de Processos Estocásticos}. Para este exercício é esperada a criação de um programa que apresente o conceito de Preparação Generalizada de Dados (PGD) e incorpore uma técnica de análise (Estatística ou Espectral) vista em sala de aula. Além disto, é esperado a apresentação de formas de uso de ferramentas como a interpolação pchip nas etapas de normalização de dados e uma Rede Neural Recorrente (RNR) no módulo de previsão de dados.
+
+Para a solução do problema apresentado, o presente trabalho aplica as ferramentas Keras, TensorFlow Lite e SciPy, considerando a necessidade de utilização destes *softwares* no contexto de microcomputação, que neste caso está sendo representada pelo RaspberryPi 4.
+
+## Seleção das ferramentas
+
+<!-- Depois, inserir aqui uma referência ao menos dessa arquitetura... -->
+Considerando que a plataforma utilizada para a conceituação sobre a utilização das ferramentas vistas em sala de aula em microcomputador é o RaspberryPi, fez-se necessário definir as bibliotecas de código utilizada, não apenas por sua facilidade de uso, mas também por ter suporte e conseguir trabalhar sob a arquitetura ARM do processador do RaspberryPi.
+
+Após esta consideração, foi realizado a seleção das seguintes ferramentas: (i) Keras\footnote{\href{http://keras.io/}{keras.io}}, para a criação em alto nível das RNN; (ii) TensorFlow Lite\footnote{\href{https://www.tensorflow.org/lite}{tensorflow.org/lite}}, para que modelos gerados com o Keras sob o TensorFlow sejam facilmente portado para ambientes embarcados; e (iii) SciPy, para a rápida utilização do método de interpolação pchip.
+
+De maneira geral, o fluxo considerando ao utilizar estas ferramentas é apresentado na Figura abaixo.
+
+```{r fig1, echo = FALSE, fig.align = "center", fig.cap="Fluxo de utilização", out.width = '80%'}
+knitr::include_graphics("images/exercicio_extra_reinaldo_ferramenta_datalake.png")
+```
+
+Seguindo este fluxo, as ferramentas selecionadas neste trabalho podem ser aplicadas a contextos de microcomputação
+
+## Preparação Generalizada de Dados
+
+Para a preparação generalizada
+
+## Préprocessamento e previsão
